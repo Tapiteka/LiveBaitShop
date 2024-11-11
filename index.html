@@ -8,97 +8,166 @@
     -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rubik+Dirt&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b08cf02381.js" crossorigin="anonymous"></script>
-    <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <title>Home</title>
 </head>
 <body>
     <!--Header/Section 1-->
-    <div id="section-1">
         <header>
-            <h1>Howard's Lakeside General Store</h1>
+            <img id="logo" src="savelogo.png" alt="Logo">
         </header>
-    </div>
     <!--Section 2/Welcome-->
     <div id="section-2">
-        <img id="section-2-img" src="general.jpeg" alt="fishing poles and tackle" height="500">
-        <div class="list-parent">
-            <h3>Welcome to Lakeside!</h3>
+        <div class="welcome-parent">
+            <h2>Welcome to Lakeside!</h2>
             <p>We're located on the edge of Buck Creek State Park surrounded by the CJ Brown Reservoir, Old Reid Park, Beaver Creek, and Beaver Lake.</p>
+        </div>
+        <div class="widget-parent">
+            <a href="tel:9375051037"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100057407261126" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:howardslakeside@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </div>
     <!--Sliding Navbar-->
     <div class="container">
-        <div id="parent-navbar">
-            <nav>
-                <ul>
-                    <li id="top-of-nav"><a href="#contact-anchor"><i class="fa-solid fa-pen-to-square"></i>  Contact</a></li>
-                    <li><a href="#store-anchor"><i class="fa-solid fa-shop"></i>  Store</a></li>
-                    <li><a href="#bait-anchor"><i class="fa-solid fa-fish"></i>  Bait</a></li>
-                    <li><a href="#map-anchor"><i class="fa-solid fa-compass"></i>  Map</a></li>
-                    <li><a href="#photo-anchor"><i class="fa-solid fa-camera"></i>  Photos</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!--Section 3/Contact-->
-        <div class="navbar-section" id="contact-anchor">
-            <h3>Contact Us</h3>
-            <p>Check our Facebook page for local fishing conditions.</p>
-            <div class="list-parent">
-                <div class="list-child">
-                    <ul class="contact-list">
-                        <li>Address:</li>
-                        <li>Email:</li>
-                        <li>Phone:</li>
-                    </ul>
-                </div>
-                <div class="list-child">
-                    <ul class="contact-list">
-                        <li>1919 Croft Rd. Springfield, OH 45503</li>
-                        <li>HowardsLakeside@gmail.com</li>
-                        <li>(937) 505-1037</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--Section 4/Store-->
-        <div class="navbar-section" id="store-anchor">
-            <h3>What We Offer</h3>
-            <p>
-                We now offer reel respooling. Leave your broken down reels with us and within 24 hours we will have them respooled to your liking.
-            </p>
+        <nav id="parent-navbar">
             <ul>
-                <li>Live Bait</li>
-                <li>Tackle</li>
-                <li>Fishing/Hunting License</li>
-                <li>Respooling Service</li>
-                <li>Camping</li>
-                <li>Firewood</li>
-                <li>Drinks</li>
-                <li>Snacks</li>
+                <li id="top-of-nav"><a href="#contact-anchor"><i class="fa-solid fa-pen-to-square"></i><span>Contact</span></a></li>
+                <li><a href="#store-anchor"><i class="fa-solid fa-shop"></i><span>Store</span></a></li>
+                <li><a href="#bait-anchor"><i class="fa-solid fa-fish"></i><span>Bait</span></a></li>
+                <li><a href="#map-anchor"><i class="fa-solid fa-compass"></i><span>Map</span></a></li>
+                <li><a href="#photo-anchor"><i class="fa-solid fa-camera"></i><span>Photos</span></a></li>
             </ul>
-        </div>
-        <!--Section 5/Bait-->
-        <div class="navbar-section" id="bait-anchor">
-            <h3>Bait and Tackle</h3>
-            <div class="bait-parent">
-                <section>
-                    <h4>Live Bait:</h4>
-                    <div >
-
+        </nav>
+        <!--Section 3/Contact-->
+        <div class="column-container-grandparent">
+            <div class="right-section" id="contact-anchor">
+                <h2>Contact Us</h2>
+                <p>Check our Facebook page for local fishing conditions.</p>
+                <div class="list-parent">
+                    <div class="list-child">
+                        <ul class="contact-list">
+                            <li><b>Address:</b></li>
+                            <li><b>Email:</b></li>
+                            <li><b>Phone:</b></li>
+                        </ul>
                     </div>
-                </section>
-
+                    <div class="list-child">
+                        <ul class="contact-list">
+                            <li>1919 Croft Rd. Springfield, OH 45503</li>
+                            <li>HowardsLakeside@gmail.com</li>
+                            <li>(937) 505-1037</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!--Section 6/Map-->
-        <div class="navbar-section" id="map-anchor">
-            <h3>Map</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6117.447025988569!2d-83.7574728!3d39.9475738!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883f5130f81985dd%3A0x39561b9624015afe!2sHoward&#39;s%20Lakeside%20General%20Store!5e0!3m2!1sen!2sus!4v1731289126896!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <!--Section 7/Photos-->
-        <div class="navbar-section" id="photo-anchor">
-            <h3>Photos</h3>
+            <!--Section 4/Store-->
+            <div class="right-section" id="store-anchor">
+                <h2>What We Offer</h2>
+                <div class="list-parent">
+                    <div class="list-child">
+                        <p>
+                            We now offer reel respooling. Leave your broken down reels with us and within 24 hours we will have them respooled to your liking.
+                        </p>
+                        <ul>
+                            <li>Live Bait</li>
+                            <li>Tackle</li>
+                            <li>Fishing/Hunting License</li>
+                            <li>Respooling Service</li>
+                            <li>Camping</li>
+                            <li>Firewood</li>
+                            <li>Drinks</li>
+                            <li>Snacks</li>
+                        </ul>
+                    </div>
+                    <img id="spool" src="spool.webp" alt="fishing poles and tackle" height="400">
+                </div>
+            </div>
+            <!--Section 5/Bait-->
+            <div class="right-section" id="bait-anchor">
+                <h2>Bait and Tackle</h2>
+                <div class="bait-grandparent">
+                    <section>
+                        <h4>Live Bait:</h4>
+                        <div class="bait-parent">
+                            <div class="list-child">
+                                <p><b>Redworms</b></p>
+                                <p><b>Night Crawlers</b></p>
+                                <p><b>Glow Worms</b></p>
+                                <p><b>Wax Worms</b></p>
+                                <p><b>Leeches</b></p>
+                            </div>
+                            <div class="bait-child">
+                                <p>$3.45/24 ct.</p>
+                                <p>$2.80/12 ct.</p>
+                                <p>$3.25/12 ct.</p>
+                                <p>$2.80/50 ct.</p>
+                                <p>$4.00/12 ct.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Live Fish:</h4>
+                        <div class="bait-parent">
+                            <div class="bait-child">
+                                <p><b>Crappie Minnows</b></p>
+                                <p><b>Bass Minnows</b></p>
+                                <p><b>Chubbs</b></p>
+                                <p><b>Goldfish Sm.</b></p>
+                                <p><b>Goldfish Lg.</b></p>
+                                <p><b>Catfish Sm.</b></p>
+                                <p><b>Catfish Md.</b></p>
+                                <p><b>Catfish Lg.</b></p>
+                            </div>
+                            <div class="bait-child">
+                                <p>$2.00/12 ct.</p>
+                                <p>$2.20/12 ct.</p>
+                                <p>$2.00/ea.</p>
+                                <p>$2.00/ea.</p>
+                                <p>$3.00/ea.</p>
+                                <p>$1.50/ea.</p>
+                                <p>$3.00/ea.</p>
+                                <p>$4.50/ea.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Cold Bait:</h4>
+                        <div class="bait-parent">
+                            <div class="bait-child">
+                                <p><b>Skipjack</b></p>
+                                <p><b>Shad</b></p>
+                                <p><b>Liver</b></p>
+                                <p><b>Strawberry Liver</b></p>
+                                <p><b>Cherry Liver</b></p>
+                                <p><b>Shrimp</b></p>
+                                <p><b>Corn</b></p>
+                            </div>
+                            <div class="bait-child">
+                                <p>$8.00/ea.</p>
+                                <p>$6.00/ea.</p>
+                                <p>$3.00/tub</p>
+                                <p>$3.00/tub</p>
+                                <p>$3.00/tub</p>
+                                <p>$4.50/tub</p>
+                                <p>$1.00/tub</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <h3 id="notice">Prices and Availability may change</h3>
+            </div>  
+            <!--Section 6/Map-->
+            <div class="right-section" id="map-anchor">
+                <h2>Map</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6117.447025988569!2d-83.7574728!3d39.9475738!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883f5130f81985dd%3A0x39561b9624015afe!2sHoward&#39;s%20Lakeside%20General%20Store!5e0!3m2!1sen!2sus!4v1731289126896!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!--Section 7/Photos-->
+            <div class="right-section" id="photo-anchor">
+                <h2>Photos</h2>
+            </div>
         </div>
     </div>
 </body>
