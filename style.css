@@ -5,6 +5,9 @@
 */
 
 /* General */
+* {
+    box-sizing: border-box;
+  }
 body {
     font-family: 'Quicksand', Verdana, Tahoma;
     margin: 0;
@@ -14,29 +17,46 @@ ul li, a {
     text-decoration: none;
     list-style-type: none;
 }
+ul li {
+    margin-bottom: 2rem;
+    font-size: 16pt;
+}
 .container {
     display: flex;
     flex-flow: row nowrap;
     overflow: visible;
     width: 100%;
+    box-sizing: border-box;
+    min-height: auto;
 }
 .right-section {
     height: 90vh;
+    margin-bottom: 8vh;
 }
 .column-container-grandparent {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     margin-left: 2.5%;
-    margin-right: 2.5%
+    margin-right: 2.5%;
+    width: 70%;
+    box-sizing: border-box;
+}
+h2 {
+    font-size: 26pt;
+}
+h4 {
+    font-size: 20pt;
 }
 h2, h4 {
     font-family: "Rubik Dirt", Verdana, system-ui;
     font-style: normal;
     font-weight: 100;
+    text-shadow: 0px 0px 10px rgb(85, 210, 255);
+    margin-bottom: 12px;
 }
 p {
     margin-top: 0;
-    text-size-adjust: 25pt;
+    font-size: 18px;
 }
 img {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .8);
@@ -57,21 +77,29 @@ header {
 #logo {
     vertical-align: center;
     width: 60%;
+    box-shadow: none;
 }
-
 
 /* Section 2 */
 #section-2 {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    background-image: url("wood.jpeg");
+    background-image: url("images/wood.jpeg");
     background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.welcome-parent {
+.welcome-parent h2, h4 {
     width: 80%;
+    margin-left: 3vw;
+    text-shadow: 0px 0px 8px white;
+}
+.welcome-parent p {
+    color:rgb(0, 0, 0);
+    font-weight: 600;
+    margin-left: 3vw;
+    text-shadow: 0px 1px 8px white;
 }
 .widget-parent {
     display: flex;
@@ -80,11 +108,11 @@ header {
     padding: 3vh 3vw 3vh 3vw;
     width: 20%;
     justify-content: center;
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
 }
 .widget-parent a {
     padding: 0 1vw;
-    text-shadow: 2px 2px px rgb(255, 255, 255);
-    text-size-adjust: 2em;
+    font-size: 20pt;
     color: black;
 }
 
@@ -95,25 +123,28 @@ nav {
     width: 25%;
     float: left;
     height: 100vh;
+
 }
 nav ul {
     background-color: rgb(115, 198, 228);
     box-sizing: border-box;
     height: 100vh;
     margin: 0;
-    align-items: left;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 nav ul li {
-    padding: 15% 20% 15% 20%;
+    padding: 4vh 2vw 4vh 2vw;
+}
+nav ul li:hover {
+    background-color: rgb(62, 163, 200);
 }
 #top-of-nav {
-    padding-top: 20vh;
+    margin-top: 15vh;
 }
-nav ul li span {
-    padding-left: 2em;
-}
+
 
 /* Contact */
 .list-parent {
@@ -121,12 +152,26 @@ nav ul li span {
     flex-flow: row nowrap;
 }
 #contact-anchor {
-    background-image: url();
+    background-image: url("logo2.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+}
+
+/* Store */
+.list-child {
+    margin-right: 1vw;
+}
+#store-flex {
+    box-sizing: border-box;
 }
 
 /* Bait */
 #bait-anchor {
     height: auto;
+}
+section>h4 {
+    font-size: 24pt;
 }
 .bait-grandparent {
     display: flex;
@@ -149,9 +194,25 @@ nav ul li span {
     text-align: center;
     color:rgb(152, 0, 0);
 }
+/* Photo */
+#photo-anchor {
+    box-sizing: border-box;
+}
+#photo-parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    box-sizing: inherit;
+}
+#photo-parent img {
+    max-height: 300px;
+    margin: 0px 8px 16px 8px;
+}
 
-@media screen and (maxwidth: 900px) {
-    ul li a>span {
-        display: none;
-    }
+footer {
+    background-image: url("images/wood.jpeg");
+    text-align: center;
+    color:rgb(62, 163, 200);
+    position: fixed;
+    height: 20vh;
 }

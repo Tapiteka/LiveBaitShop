@@ -1,0 +1,26 @@
+/*
+    Name: Tabitha Love
+    Assignment: Exam 3 - Live Bait Website
+    Date: Nov 2024
+*/
+
+@media screen and (max-width: 900px) {
+    #parent-navbar {
+        width: 10%;
+    }
+    .nav-hide {
+        display: none;
+    }
+    #store-flex {
+        display: flex;
+        flex-flow: column nowrap;
+        height: auto;
+    }  
+    #store-flex img {
+        display: none;
+    }
+    iframe {
+        width: 100vw;
+    }
+
+}
